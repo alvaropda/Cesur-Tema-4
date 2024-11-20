@@ -1,10 +1,10 @@
 package CasoPractico1;
 
 public class SerVivo {
-    private int edad;
+    private byte edad;
     private int mayor;
 
-    public SerVivo(int edad) {
+    public SerVivo(byte edad) {
         this.edad = edad;
     }
 
@@ -17,7 +17,7 @@ public class SerVivo {
     }
 
     public boolean equals(SerVivo otro){
-        return true;
+        return this.edad == otro.edad;
     }
 
     public String toString() {

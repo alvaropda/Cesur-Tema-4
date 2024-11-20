@@ -14,4 +14,8 @@ public class Humano extends SerVivo{
     public SerVivo mayor(SerVivo otro) {
         return getEdad() > otro.getEdad() ? this : otro;
     }
+
+    public boolean equals (Humano otro){
+        return nombre.equals(otro.nombre) && this.getEdad() == otro.getEdad();
+    }
 }
